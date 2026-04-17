@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left-half">
+            <div class="logo"><img src="svgs/logo.svg" width="30px"></div>
+            <div class="home-icon"><img src="svgs/home.svg" width="25px" alt="" srcset=""></div>
+            <div class="search-bar">
+                <div class="search-icon"><img src="svgs/search.svg" width="20px" srcset=""></div>
+                <input type="text" class="input-box" placeholder="What do you want to play?">
+                <div class="browse"><img src="svgs/browse.svg" width="20px" srcset=""></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-half-p1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-p2">
+                <div class="nav-text install"><img src="svgs/install.svg" width="20px" alt="" srcset="">
+                    <span>Install</span>
+                </div>
+                <div class="nav-text signup">Sign up</div>
+                <button class="login-btn">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <-----Main--left--part--->
+    <div class="main">
+        <div class="main-left-part">
+            <div class="library">
+                <p>Your library</p>
+                <div class="tooltip-container">
+                    <button class="create-btn">
+                        <span class="icon">+</span>
+                        <span>Create</span>
+                    </button>
+                    <div class="tooltip-text">Create a playlist, folder or Jam</div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button>create playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some prodcasts to follow</h4>
+                    <p>we'll keep you updated on new episodes</p>
+                    <button>Browse prodcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Popular songs</h2>
+                <div class="songs">
+                    <div class="music-card" data-audio="audio/khat.mp3">
+                        <img src="images/khat php.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">khat</div>
+                        <div class="img-description">Navjot Ahuja</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Meri Banogi Kya-(Mr-Jat.in).mp3">
+                        <img src="images/meri banogi kya pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Meri banogi kya</div>
+                        <div class="img-description">Rito RIba, Rajat Nagpal</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Sheesha Swara Verma, Mitta Ror (pagalall.com).mp3">
+                        <img src="images/sheesha pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Sheesha - Aakhya Mai Aakh Ghali Jo Beran</div>
+                        <div class="img-description">Mitta Ror, Swara Verma</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/dhooron.mp3">
+                        <img src="images/dhooron pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Dhooron Dhooron</div>
+                        <div class="img-description">Paresh Pahuja</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/hawa banke pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Hawa banke</div>
+                        <div class="img-description">Rito Riba, Neha Kakkar</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/khat.mp3">
+                        <img src="images/khat php.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">khat</div>
+                        <div class="img-description">Navjot Ahuja</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/meri banogi kya pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Meri banogi kya</div>
+                        <div class="img-description">Mitta Ror, Swara Verma</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Sheesha Swara Verma, Mitta Ror (pagalall.com).mp3">
+                        <img src="images/sheesha pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Sheesha - Aakhya Mai Aakh Ghali Jo Beran</div>
+                        <div class="img-description">Mitta Ror, Swara Verma</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/hawa banke pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Hawa banke</div>
+                        <div class="img-description">Rito Riba, Neha Kakkar</div>
+                    </div>
+                </div>
+            </div>
+            <div class="music-section">
+                <h2>Recomended songs</h2>
+                <div class="songs">
+                    <div class="music-card" data-audio="audio/khat.mp3">
+                        <img src="images/khat php.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">khat</div>
+                        <div class="img-description">Navjot Ahuja</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Meri Banogi Kya-(Mr-Jat.in).mp3" >
+                        <img src="images/meri banogi kya pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Meri banogi kya</div>
+                        <div class="img-description">Rito RIba, Rajat Nagpal</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Sheesha Swara Verma, Mitta Ror (pagalall.com).mp3">
+                        <img src="images/sheesha pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Sheesha - Aakhya Mai Aakh Ghali Jo Beran</div>
+                        <div class="img-description">Mitta Ror, Swara Verma</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/dhooron.mp3">
+                        <img src="images/dhooron pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Dhooron Dhooron</div>
+                        <div class="img-description">Paresh Pahuja</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/khat.mp3">
+                        <img src="images/khat php.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">khat</div>
+                        <div class="img-description">Navjot Ahuja</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Meri Banogi Kya-(Mr-Jat.in).mp3">
+                        <img src="images/meri banogi kya pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Meri banogi kya</div>
+                        <div class="img-description">Mitta Ror, Swara Verma</div>
+                    </div>
+                    <div class="music-card" data-audio="audio/Sheesha Swara Verma, Mitta Ror (pagalall.com).mp3">
+                        <img src="images/sheesha pfp.jpg" alt="">
+                        <div class="music-play-button"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path
+                                    d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z" />
+                            </svg></div>
+                        <div class="img-title">Sheesha - Aakhya Mai Aakh Ghali Jo Beran</div>
+                        <div class="img-description">Mitta Ror, Swara Verma</div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="images/khat php.jpg" alt="">
+            <div class="image-tittle-info">khat</div>
+            <div class="img-des-info">Navjot Ahuja</div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <div id="shuffle"><img class="player-btns" src="svgs/shuffle.svg" alt=""></div>
+                <div id="backward"><img class="player-btns" src="svgs/backward.svg" alt=""></div>
+                <div id="play"><img class="player-btns" src="svgs/play.svg" alt=""></div>
+                <div id="forward"><img class="player-btns" src="svgs/forward.svg" alt=""></div>
+                <div id="repeat"><img class="player-btns" src="svgs/repeat.svg" alt=""></div>
+            </div>
+            <div>
+                <input type="range" id="progressBar" value="0">
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <audio id="audioPlayer"></audio>
+    <!-- <script src="script.js"></script> -->
+     <script src="script.js"></script>
+</body>
+
+</html>

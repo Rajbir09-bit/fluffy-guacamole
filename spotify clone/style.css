@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Montserrat", "sans-serif";
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.left-half {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin: 1rem;
+    /* border: 2px solid red */
+
+}
+
+.logo img {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.home-icon {
+    font-size: 1.7rem;
+    background-color: #1f1f1f;
+    color: rgb(179, 179, 179);
+    padding: 8px;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.home-icon img {
+    filter: invert(1);
+}
+
+.home-icon:hover {
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    height: 3rem;
+    width: 30rem;
+    background-color: #1f1f1f;
+    border-radius: 20rem;
+    align-items: center;
+}
+
+.search-bar:hover {
+    background-color: #272727;
+    border: 2px solid rgb(76, 76, 76);
+}
+
+.search-icon img {
+    filter: invert(1);
+}
+
+.browse img {
+    filter: invert(1);
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    color: rgb(179, 179, 179);
+    padding: 0 0.7rem;
+}
+
+.search-bar:hover .search-icon {
+    color: white;
+}
+
+.input-box {
+    width: 80%;
+    height: 60%;
+    background-color: #272727;
+    border: none;
+    border-right: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.browse {
+    font-size: 1.3rem;
+    margin-left: 0.6rem;
+    transition: 0.2s;
+}
+
+.browse:hover {
+    transform: scale(1.05);
+}
+
+.install img {
+    filter: invert(1);
+}
+
+.right-half {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 40%;
+}
+
+.right-half-p1 {
+    display: flex;
+    align-items: center;
+    height: 1.7rem;
+    margin: 0 1rem;
+    padding: 0;
+    border-right: 1px solid rgb(179, 179, 179);
+}
+
+.nav-text {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    color: rgb(179, 179, 179);
+    transition: 0.1s;
+}
+
+.nav-text:hover {
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.right-half-p2 {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 15rem;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 1rem;
+    transition: 1s;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+.signup {
+    font-size: 0.8rem;
+}
+
+.install {
+    font-size: 0.8rem;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main {
+    display: flex;
+}
+
+.main-left-part {
+    background-color: rgb(7, 7, 7);
+    height: 84vh;
+    width: 27vw;
+    color: white;
+    /* display: flex;
+    justify-content: space-around;   */
+}
+
+.box-container {
+    margin-top: 1rem;
+    height: 100%;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.5rem;
+    padding-top: 1rem;
+}
+
+.library p {
+    font-weight: bold;
+    color: white;
+}
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #2a2a2a;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    position: absolute;
+    bottom: 120%;
+    /* shows above button */
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #1a1a1a;
+    color: white;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+    opacity: 1;
+}
+
+.tooltip-container:hover {
+    transform: scale(1.05);
+}
+
+.box {
+    background-color: #1f1f1f;
+    height: 30%;
+    padding: 34px;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.main-right-part {
+    background-color: #1f1f1f;
+    width: 75vw;
+    height: 84vh;
+    margin: 12px;
+    overflow: auto;
+}
+
+.box{
+    font-weight: 600;
+    font: 0.9rem;
+    padding: 1.3rem 0 0.5rem 1rem;
+}
+
+.box p{
+    font-size: 0.8rem;
+    /* padding-left: 1rem; */
+}
+
+.box button{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 25rem ;
+    padding: 0.6rem 0.8rem;
+    margin: 1rem;
+}
+
+.box button:hover{
+    transform: scale(1.05);
+    transition: 0.2 ease;
+}
+.music-play-button{
+    width: 2.0rem;
+    height: 2.0rem;
+    background-color: green;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 2.7rem;
+    display: flex;
+    transform: translate(110px, -60px);
+    /* display: none; */
+    opacity: 0;
+    transition: 0.5s;
+}
+.music-card:hover .music-play-button{
+    display: flex;
+    opacity: 1;
+    transform: translate(110px, -50px);
+}
+.music-card img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+.music-card{
+    width: 10rem;
+    /* height: 7rem; */
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+.music-card:hover{
+    background-color: #1c1b1b;
+}
+.img-title{
+    margin: 0.7rem 0;
+}
+.music-section{
+    margin: 1.5rem 0 1.5rem 1.5rem;
+}
+.main-right-part{
+    color: white;
+}
+.songs{
+    margin: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    scrollbar-width: none;
+}
+.img-title{
+    margin: 0.7rem 0;
+}
+.img-description{
+    font-size: 0.8rem;
+    color: rgb(199,199,199);
+}
+
+/* player */
+.player-bar{
+    width: 100%;
+    height: 5rem;
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #050505;
+}
+.music-controller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 0.5rem; */
+}
+.player img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+.player-btns{
+    font-size: 1.1rem;
+    margin: 0.4rem 1rem;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+} 
+.player-btns:hover{
+    transform: scale(1.2);
+    color: rgb(232,232,232);    
+}
+#progressBar{
+    appearance: none;
+    width: 600px;
+    height: 3px;
+    background-color: #383737;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.now-bar{
+    color: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    gap: 12px;
+    align-items: center;
+}
+.now-bar img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+.img-title-info{
+    font-size: 0.9rem;
+}
+.img-des-info{
+    font: 0.8rem;
+    color: rgb(137, 142, 146);
+}
+.music-card.playing {
+  background-color: rgba(29, 185, 84, 0.15); /* Spotify green tint */
+  border-radius: 8px;
+}
+
+.music-card.playing .music-play-button {
+  opacity: 1;
+}
+
+.music-card.playing img {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
